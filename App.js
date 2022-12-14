@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { persistor, store } from './redux/store';
+
+import Home from './app/screens/Home'
+import {
+  StyleSheet, View, SafeAreaView, StatusBar,
+  Platform, Text, Dimensions
+} from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
+import { PersistGate } from 'redux-persist/integration/react';
+
 
 export default function App() {
+
+  // backgroundColor: '#ff12'
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Home />
+      </PersistGate>
+    </Provider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flexDirection: 'row',
+//     flex: 1,
+//     marginTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+//   },
+// });
