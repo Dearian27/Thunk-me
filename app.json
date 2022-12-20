@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "DoneWithIt",
+    "name": "Thunk me",
     "slug": "DoneWithIt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/icon.png",
+    "icon": "./app/assets/brain.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./app/assets/splash.png",
@@ -23,7 +23,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/brain.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.me"

@@ -2,10 +2,6 @@ import { Provider } from 'react-redux';
 import { persistor, store } from './redux/store';
 
 import Home from './app/screens/Home'
-import {
-  StyleSheet, View, SafeAreaView, StatusBar,
-  Platform, Text, Dimensions
-} from 'react-native';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import { PersistGate } from 'redux-persist/integration/react';
 

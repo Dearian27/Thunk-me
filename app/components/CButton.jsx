@@ -17,12 +17,16 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'black',
+    // backgroundColor: 'black',
+    borderWidth: 5,
+
   },
   text: {
-    fontSize: 26,
+    fontFamily: "Roboto",
+    fontSize: 30,
     fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
+    bottom: 2
   },
 });
 

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { View, Text, Image } from 'react-native'
 const Header = () => {
   const score = useSelector(state => state.score.score)
-  console.log('rewrite header.jsx')
+  // console.log('rewrite header.jsx')
 
   return (
     <View style={{
@@ -18,7 +18,7 @@ const Header = () => {
       justifyContent: 'space-between',
       alignItems: 'center',
     }}>
-      <Text style={{ fontSize: 22, fontWeight: 'bold' }}>Thunk</Text>
+      <Text style={{ fontSize: 22, fontWeight: 'bold' }}>Thunk me</Text>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#888888' }}>
           {score}
